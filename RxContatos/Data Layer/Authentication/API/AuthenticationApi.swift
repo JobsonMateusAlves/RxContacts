@@ -22,9 +22,9 @@ class AuthenticationApi {
                                  encoding: JSONEncoding.default)
     }
     
-    func logout() -> DataRequest {
+    func logout(token: String) -> DataRequest {
         
-        return Alamofire.request("\(baseUrl)/logout", method: .delete, headers: [:])
+        return Alamofire.request("\(baseUrl)/logout", method: .delete, headers: ["token": token])
     }
     
     func signup(user: UserModel) -> DataRequest {
