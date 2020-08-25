@@ -19,9 +19,12 @@
 		4569D43B24EE9E21004792FC /* RxContatosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569D43A24EE9E21004792FC /* RxContatosUITests.swift */; };
 		4569D45824EEA0EF004792FC /* ContatosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569D45224EEA0EF004792FC /* ContatosViewModel.swift */; };
 		4569D46024EEA2AF004792FC /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569D45F24EEA2AF004792FC /* Contact.swift */; };
-		4569D46624EEA738004792FC /* ContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569D46524EEA738004792FC /* ContactUseCase.swift */; };
 		4576ACAE24EEC55B00F1BAA6 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576ACAD24EEC55B00F1BAA6 /* ContactModel.swift */; };
 		A40287AB514E30F4A03AD793 /* Pods_RxContatosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B5F437B4159B039269B6FE /* Pods_RxContatosTests.framework */; };
+		F6134BBC24F5C7DD0062173F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6134BBB24F5C7DD0062173F /* LoginUseCase.swift */; };
+		F6134BC424F5CAD30062173F /* SignupUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6134BC324F5CAD30062173F /* SignupUseCase.swift */; };
+		F6134BC624F5CB5B0062173F /* LogoutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6134BC524F5CB5B0062173F /* LogoutUseCase.swift */; };
+		F6134BC824F5CC7D0062173F /* SessionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6134BC724F5CC7D0062173F /* SessionUseCase.swift */; };
 		F6880A3924F4768E0051523A /* ContactsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6880A3824F4768E0051523A /* ContactsApi.swift */; };
 		F6880A3D24F4783B0051523A /* AuthenticationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6880A3C24F4783B0051523A /* AuthenticationApi.swift */; };
 		F6880A4024F4797A0051523A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6880A3F24F4797A0051523A /* UserModel.swift */; };
@@ -33,6 +36,7 @@
 		F69181B824F494C000F1C8A3 /* AuthenticationRemoteRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181B724F494C000F1C8A3 /* AuthenticationRemoteRepositoryProtocol.swift */; };
 		F69181BA24F4956A00F1C8A3 /* AuthenticationLocalRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181B924F4956A00F1C8A3 /* AuthenticationLocalRepositoryProtocol.swift */; };
 		F69181BC24F4963700F1C8A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181BB24F4963700F1C8A3 /* User.swift */; };
+		F69181CB24F5C28600F1C8A3 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181CA24F5C28600F1C8A3 /* UseCase.swift */; };
 		F6B5751E24F47B6F00CCC7FB /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B5751D24F47B6F00CCC7FB /* SessionModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +75,6 @@
 		4569D43C24EE9E21004792FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4569D45224EEA0EF004792FC /* ContatosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatosViewModel.swift; sourceTree = "<group>"; };
 		4569D45F24EEA2AF004792FC /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		4569D46524EEA738004792FC /* ContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUseCase.swift; sourceTree = "<group>"; };
 		4576ACAD24EEC55B00F1BAA6 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		58526FA3661CAF114698FD2B /* Pods-RxContatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxContatos.release.xcconfig"; path = "Target Support Files/Pods-RxContatos/Pods-RxContatos.release.xcconfig"; sourceTree = "<group>"; };
 		7D3C0647A67F92323DC9428E /* Pods-RxContatosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxContatosTests.release.xcconfig"; path = "Target Support Files/Pods-RxContatosTests/Pods-RxContatosTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +84,10 @@
 		C2C3D8A1C6EA8573B9C0BEBA /* Pods-RxContatos-RxContatosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxContatos-RxContatosUITests.release.xcconfig"; path = "Target Support Files/Pods-RxContatos-RxContatosUITests/Pods-RxContatos-RxContatosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9B5F437B4159B039269B6FE /* Pods_RxContatosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxContatosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37F3A708B68A0E225611E0A /* Pods-RxContatos-RxContatosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxContatos-RxContatosUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxContatos-RxContatosUITests/Pods-RxContatos-RxContatosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6134BBB24F5C7DD0062173F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		F6134BC324F5CAD30062173F /* SignupUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUseCase.swift; sourceTree = "<group>"; };
+		F6134BC524F5CB5B0062173F /* LogoutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutUseCase.swift; sourceTree = "<group>"; };
+		F6134BC724F5CC7D0062173F /* SessionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUseCase.swift; sourceTree = "<group>"; };
 		F6880A3824F4768E0051523A /* ContactsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsApi.swift; sourceTree = "<group>"; };
 		F6880A3C24F4783B0051523A /* AuthenticationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationApi.swift; sourceTree = "<group>"; };
 		F6880A3F24F4797A0051523A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -92,6 +99,7 @@
 		F69181B724F494C000F1C8A3 /* AuthenticationRemoteRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRemoteRepositoryProtocol.swift; sourceTree = "<group>"; };
 		F69181B924F4956A00F1C8A3 /* AuthenticationLocalRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLocalRepositoryProtocol.swift; sourceTree = "<group>"; };
 		F69181BB24F4963700F1C8A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F69181CA24F5C28600F1C8A3 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		F6B5751D24F47B6F00CCC7FB /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +142,7 @@
 		453E602624EEAA7D00ACC662 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F6134BBD24F5C7F10062173F /* Protocols */,
 				F69181AE24F4847000F1C8A3 /* Generic */,
 			);
 			path = Core;
@@ -249,7 +258,7 @@
 		4569D46424EEA6F5004792FC /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				4569D46524EEA738004792FC /* ContactUseCase.swift */,
+				F69181CA24F5C28600F1C8A3 /* UseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -285,6 +294,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F6134BBD24F5C7F10062173F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F6880A3424F475CE0051523A /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,7 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				F6B5751F24F47D9400CCC7FB /* Entities */,
-				F6B5752024F47D9A00CCC7FB /* Protocols */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -356,9 +371,21 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		F69181BD24F5BEB200F1C8A3 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F6134BBB24F5C7DD0062173F /* LoginUseCase.swift */,
+				F6134BC324F5CAD30062173F /* SignupUseCase.swift */,
+				F6134BC524F5CB5B0062173F /* LogoutUseCase.swift */,
+				F6134BC724F5CC7D0062173F /* SessionUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		F6B3174D24F475A9006D158E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				F69181BD24F5BEB200F1C8A3 /* UseCases */,
 				F6880A3E24F4796E0051523A /* Entities */,
 				F6880A3A24F4781F0051523A /* API */,
 				F6B5751C24F47ACB00CCC7FB /* Repository */,
@@ -383,13 +410,6 @@
 				F69181BB24F4963700F1C8A3 /* User.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		F6B5752024F47D9A00CCC7FB /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,17 +652,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6880A4024F4797A0051523A /* UserModel.swift in Sources */,
+				F6134BC624F5CB5B0062173F /* LogoutUseCase.swift in Sources */,
 				F69181AC24F483FE00F1C8A3 /* AuthenticationLocalRepository.swift in Sources */,
 				F6880A3D24F4783B0051523A /* AuthenticationApi.swift in Sources */,
+				F6134BC824F5CC7D0062173F /* SessionUseCase.swift in Sources */,
 				4569D45824EEA0EF004792FC /* ContatosViewModel.swift in Sources */,
 				F69181AA24F483CE00F1C8A3 /* AuthenticationRepository.swift in Sources */,
+				F69181CB24F5C28600F1C8A3 /* UseCase.swift in Sources */,
 				4569D41D24EE9E1D004792FC /* ViewController.swift in Sources */,
 				F69181B024F4848400F1C8A3 /* LocalRepository.swift in Sources */,
 				4576ACAE24EEC55B00F1BAA6 /* ContactModel.swift in Sources */,
 				F69181BC24F4963700F1C8A3 /* User.swift in Sources */,
 				F69181B824F494C000F1C8A3 /* AuthenticationRemoteRepositoryProtocol.swift in Sources */,
 				F69181B624F490EB00F1C8A3 /* AuthenticationRepositoryProtocol.swift in Sources */,
-				4569D46624EEA738004792FC /* ContactUseCase.swift in Sources */,
 				4569D41924EE9E1D004792FC /* AppDelegate.swift in Sources */,
 				4569D41B24EE9E1D004792FC /* SceneDelegate.swift in Sources */,
 				F69181BA24F4956A00F1C8A3 /* AuthenticationLocalRepositoryProtocol.swift in Sources */,
@@ -650,6 +672,8 @@
 				F69181A824F480EC00F1C8A3 /* AuthenticationRemoteRepository.swift in Sources */,
 				F6B5751E24F47B6F00CCC7FB /* SessionModel.swift in Sources */,
 				4569D46024EEA2AF004792FC /* Contact.swift in Sources */,
+				F6134BC424F5CAD30062173F /* SignupUseCase.swift in Sources */,
+				F6134BBC24F5C7DD0062173F /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,10 @@ class AuthenticationRepository: AuthenticationRepositoryProtocol {
     func logout() {
         self.remoteRepository.logout(token: self.localRepository.getToken()) { (error) in
             print(error?.localizedDescription ?? "")
+            
+            if let _ = error {
+                self.localRepository.logout()
+            }
         }
     }
     
