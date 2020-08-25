@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		20B8C518899EE9381D8B04CE /* Pods_RxContatos_RxContatosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C099A329797306F6CDC484 /* Pods_RxContatos_RxContatosUITests.framework */; };
 		388D814E3562B46DC574A104 /* Pods_RxContatos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE6ED33BA1A52A68CCDB2E3 /* Pods_RxContatos.framework */; };
-		453E602824EEAB1900ACC662 /* ContactRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E602724EEAB1900ACC662 /* ContactRepositoryProtocol.swift */; };
 		4569D41924EE9E1D004792FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569D41824EE9E1D004792FC /* AppDelegate.swift */; };
 		4569D41B24EE9E1D004792FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569D41A24EE9E1D004792FC /* SceneDelegate.swift */; };
 		4569D41D24EE9E1D004792FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569D41C24EE9E1D004792FC /* ViewController.swift */; };
@@ -22,11 +21,18 @@
 		4569D46024EEA2AF004792FC /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569D45F24EEA2AF004792FC /* Contact.swift */; };
 		4569D46624EEA738004792FC /* ContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569D46524EEA738004792FC /* ContactUseCase.swift */; };
 		4576ACAE24EEC55B00F1BAA6 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576ACAD24EEC55B00F1BAA6 /* ContactModel.swift */; };
-		45C88D9724EEBB5900969BE3 /* LocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C88D9624EEBB5900969BE3 /* LocalRepository.swift */; };
 		A40287AB514E30F4A03AD793 /* Pods_RxContatosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B5F437B4159B039269B6FE /* Pods_RxContatosTests.framework */; };
 		F6880A3924F4768E0051523A /* ContactsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6880A3824F4768E0051523A /* ContactsApi.swift */; };
 		F6880A3D24F4783B0051523A /* AuthenticationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6880A3C24F4783B0051523A /* AuthenticationApi.swift */; };
 		F6880A4024F4797A0051523A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6880A3F24F4797A0051523A /* UserModel.swift */; };
+		F69181A824F480EC00F1C8A3 /* AuthenticationRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181A724F480EC00F1C8A3 /* AuthenticationRemoteRepository.swift */; };
+		F69181AA24F483CE00F1C8A3 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181A924F483CE00F1C8A3 /* AuthenticationRepository.swift */; };
+		F69181AC24F483FE00F1C8A3 /* AuthenticationLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181AB24F483FE00F1C8A3 /* AuthenticationLocalRepository.swift */; };
+		F69181B024F4848400F1C8A3 /* LocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181AF24F4848400F1C8A3 /* LocalRepository.swift */; };
+		F69181B624F490EB00F1C8A3 /* AuthenticationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181B524F490EB00F1C8A3 /* AuthenticationRepositoryProtocol.swift */; };
+		F69181B824F494C000F1C8A3 /* AuthenticationRemoteRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181B724F494C000F1C8A3 /* AuthenticationRemoteRepositoryProtocol.swift */; };
+		F69181BA24F4956A00F1C8A3 /* AuthenticationLocalRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181B924F4956A00F1C8A3 /* AuthenticationLocalRepositoryProtocol.swift */; };
+		F69181BC24F4963700F1C8A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69181BB24F4963700F1C8A3 /* User.swift */; };
 		F6B5751E24F47B6F00CCC7FB /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B5751D24F47B6F00CCC7FB /* SessionModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		3FE6ED33BA1A52A68CCDB2E3 /* Pods_RxContatos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxContatos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		453E602724EEAB1900ACC662 /* ContactRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRepositoryProtocol.swift; sourceTree = "<group>"; };
 		4569D41524EE9E1D004792FC /* RxContatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxContatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4569D41824EE9E1D004792FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4569D41A24EE9E1D004792FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +73,6 @@
 		4569D45F24EEA2AF004792FC /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		4569D46524EEA738004792FC /* ContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUseCase.swift; sourceTree = "<group>"; };
 		4576ACAD24EEC55B00F1BAA6 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
-		45C88D9624EEBB5900969BE3 /* LocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepository.swift; sourceTree = "<group>"; };
 		58526FA3661CAF114698FD2B /* Pods-RxContatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxContatos.release.xcconfig"; path = "Target Support Files/Pods-RxContatos/Pods-RxContatos.release.xcconfig"; sourceTree = "<group>"; };
 		7D3C0647A67F92323DC9428E /* Pods-RxContatosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxContatosTests.release.xcconfig"; path = "Target Support Files/Pods-RxContatosTests/Pods-RxContatosTests.release.xcconfig"; sourceTree = "<group>"; };
 		81C099A329797306F6CDC484 /* Pods_RxContatos_RxContatosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxContatos_RxContatosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,14 @@
 		F6880A3824F4768E0051523A /* ContactsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsApi.swift; sourceTree = "<group>"; };
 		F6880A3C24F4783B0051523A /* AuthenticationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationApi.swift; sourceTree = "<group>"; };
 		F6880A3F24F4797A0051523A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F69181A724F480EC00F1C8A3 /* AuthenticationRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRemoteRepository.swift; sourceTree = "<group>"; };
+		F69181A924F483CE00F1C8A3 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		F69181AB24F483FE00F1C8A3 /* AuthenticationLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLocalRepository.swift; sourceTree = "<group>"; };
+		F69181AF24F4848400F1C8A3 /* LocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepository.swift; sourceTree = "<group>"; };
+		F69181B524F490EB00F1C8A3 /* AuthenticationRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepositoryProtocol.swift; sourceTree = "<group>"; };
+		F69181B724F494C000F1C8A3 /* AuthenticationRemoteRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRemoteRepositoryProtocol.swift; sourceTree = "<group>"; };
+		F69181B924F4956A00F1C8A3 /* AuthenticationLocalRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLocalRepositoryProtocol.swift; sourceTree = "<group>"; };
+		F69181BB24F4963700F1C8A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F6B5751D24F47B6F00CCC7FB /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,25 +126,15 @@
 		453E602324EEA90D00ACC662 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				453E602424EEA91900ACC662 /* Repository */,
 				4569D46424EEA6F5004792FC /* UseCases */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		453E602424EEA91900ACC662 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				453E602724EEAB1900ACC662 /* ContactRepositoryProtocol.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
 		453E602624EEAA7D00ACC662 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4576ACAF24EFF43600F1BAA6 /* Extensions */,
-				45C88D9624EEBB5900969BE3 /* LocalRepository.swift */,
+				F69181AE24F4847000F1C8A3 /* Generic */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -260,13 +262,6 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		4576ACAF24EFF43600F1BAA6 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		554A9CD6F20B89D59B18DD86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +298,8 @@
 		F6880A3524F475EE0051523A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				F6B5751F24F47D9400CCC7FB /* Entities */,
+				F6B5752024F47D9A00CCC7FB /* Protocols */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -341,6 +338,24 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		F69181AE24F4847000F1C8A3 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				F69181AF24F4848400F1C8A3 /* LocalRepository.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		F69181B424F4908500F1C8A3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F69181B524F490EB00F1C8A3 /* AuthenticationRepositoryProtocol.swift */,
+				F69181B724F494C000F1C8A3 /* AuthenticationRemoteRepositoryProtocol.swift */,
+				F69181B924F4956A00F1C8A3 /* AuthenticationLocalRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F6B3174D24F475A9006D158E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,8 +369,27 @@
 		F6B5751C24F47ACB00CCC7FB /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				F69181B424F4908500F1C8A3 /* Protocols */,
+				F69181A924F483CE00F1C8A3 /* AuthenticationRepository.swift */,
+				F69181A724F480EC00F1C8A3 /* AuthenticationRemoteRepository.swift */,
+				F69181AB24F483FE00F1C8A3 /* AuthenticationLocalRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		F6B5751F24F47D9400CCC7FB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F69181BB24F4963700F1C8A3 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F6B5752024F47D9A00CCC7FB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -598,16 +632,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6880A4024F4797A0051523A /* UserModel.swift in Sources */,
+				F69181AC24F483FE00F1C8A3 /* AuthenticationLocalRepository.swift in Sources */,
 				F6880A3D24F4783B0051523A /* AuthenticationApi.swift in Sources */,
 				4569D45824EEA0EF004792FC /* ContatosViewModel.swift in Sources */,
+				F69181AA24F483CE00F1C8A3 /* AuthenticationRepository.swift in Sources */,
 				4569D41D24EE9E1D004792FC /* ViewController.swift in Sources */,
+				F69181B024F4848400F1C8A3 /* LocalRepository.swift in Sources */,
 				4576ACAE24EEC55B00F1BAA6 /* ContactModel.swift in Sources */,
-				453E602824EEAB1900ACC662 /* ContactRepositoryProtocol.swift in Sources */,
+				F69181BC24F4963700F1C8A3 /* User.swift in Sources */,
+				F69181B824F494C000F1C8A3 /* AuthenticationRemoteRepositoryProtocol.swift in Sources */,
+				F69181B624F490EB00F1C8A3 /* AuthenticationRepositoryProtocol.swift in Sources */,
 				4569D46624EEA738004792FC /* ContactUseCase.swift in Sources */,
 				4569D41924EE9E1D004792FC /* AppDelegate.swift in Sources */,
 				4569D41B24EE9E1D004792FC /* SceneDelegate.swift in Sources */,
-				45C88D9724EEBB5900969BE3 /* LocalRepository.swift in Sources */,
+				F69181BA24F4956A00F1C8A3 /* AuthenticationLocalRepositoryProtocol.swift in Sources */,
 				F6880A3924F4768E0051523A /* ContactsApi.swift in Sources */,
+				F69181A824F480EC00F1C8A3 /* AuthenticationRemoteRepository.swift in Sources */,
 				F6B5751E24F47B6F00CCC7FB /* SessionModel.swift in Sources */,
 				4569D46024EEA2AF004792FC /* Contact.swift in Sources */,
 			);

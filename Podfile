@@ -11,6 +11,10 @@ target 'RxContatos' do
   pod 'AlamofireObjectMapper'
   pod 'ObjectMapper'
   pod 'RealmSwift'
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxRelay'
 
   target 'RxContatosTests' do
     inherit! :search_paths
