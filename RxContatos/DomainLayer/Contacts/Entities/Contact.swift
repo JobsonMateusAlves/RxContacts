@@ -25,13 +25,4 @@ public struct Contact {
         self.email = email
         self.phone = phone
     }
-    
-    init(contactModel: ContactModel) {
-        self.id = contactModel.id ?? ""
-        self.userId = contactModel.userId ?? ""
-        self.name = contactModel.name ?? ""
-        self.photo = contactModel.photo ?? ""
-        self.email = contactModel.email ?? ""
-        self.phone = contactModel.phone ?? ""
-    }
 }
