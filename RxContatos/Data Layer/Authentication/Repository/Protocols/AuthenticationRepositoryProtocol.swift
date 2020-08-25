@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+protocol AuthenticationRepositoryProtocol {
+    func login(email: String, password: String)
+    func logout()
+    func signup(user: User)
+    func getUser() -> User
+    func isSessionActive() -> Bool
+    func getToken() -> String
+}
+

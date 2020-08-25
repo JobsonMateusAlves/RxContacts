@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+protocol AuthenticationLocalRepositoryProtocol {
+    func create(session: SessionModel)
+    func logout()
+    func getUser() -> UserModel?
+    func isSessionActive() -> Bool
+    func getToken() -> String
+}
