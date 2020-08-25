@@ -19,6 +19,16 @@ class UserModel: Object, Mappable {
     
     var password: String?
     
+    required init() {}
+    
+    init(user: User) {
+        self.id = user.id
+        self.name = user.name
+        self.photo = user.photo
+        self.email = user.email
+        self.password = user.password
+    }
+    
     required convenience init?(map: Map) {
         self.init()
     }
