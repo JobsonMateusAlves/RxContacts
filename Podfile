@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 
-target 'RxContatos' do
+target 'RxContacts' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for RxContatos
+  # Pods for RxContacts
 
   pod 'Alamofire'
   pod 'AlamofireObjectMapper'
@@ -15,13 +15,14 @@ target 'RxContatos' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxRelay'
-
-  target 'RxContatosTests' do
+  pod 'RxRealm'
+  
+  target 'RxContactsTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'RxContatosUITests' do
+  target 'RxContactsUITests' do
     # Pods for testing
   end
 
