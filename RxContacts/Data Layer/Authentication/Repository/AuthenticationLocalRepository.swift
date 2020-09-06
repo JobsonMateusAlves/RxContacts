@@ -18,14 +18,15 @@ class AuthenticationLocalRepository: AuthenticationLocalRepositoryType {
         case token
     }
     //MARK: Observable properties
-    private var userValue = BehaviorRelay<UserModel?>(value: nil)
+
+    private var userValue = BehavoirRelay<UserModel?>(defaultValue: nil)
     var user: Observable<UserModel?> {
         get {
             self.userValue.asObservable()
         }
     }
     
-    private var active = BehaviorRelay<Bool>(value: false)
+    private var active = BehavoirRelay<Bool>(defaultValue: false)
     var isSessionActive: Observable<Bool> {
         get {
             self.active.asObservable()
@@ -45,11 +46,11 @@ class AuthenticationLocalRepository: AuthenticationLocalRepositoryType {
     }
     
     //MARK: Action methods
-    func create(session: SessionModel) {
+    func create(session: SessionDTO) {
         
         if let user = session.user {
             self.delete()
-            self.save(object: user, update: .error)
+//            self.save(object: user, update: .error)
         }
         
         if let token = session.token {
@@ -71,7 +72,7 @@ class AuthenticationLocalRepository: AuthenticationLocalRepositoryType {
         
         self.userValue.accept(self.realm.objects(UserModel.self).first)
         
-        self.active.accept(self.userValue.value != nil && !self.token.isEmpty)
+        self.active.accept(self.realm.objects(UserModel.self).first != nil && !self.token.isEmpty)
     }
     
     private func set(_ token: String) {

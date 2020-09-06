@@ -9,7 +9,8 @@
 import Foundation
 
 protocol AuthenticationRemoteRepositoryProtocol {
-    func login(email: String, password: String, result: @escaping (SessionModel?, Error?) -> Void)
+    func login(email: String, password: String, result: @escaping (SessionDTO?, Error?) -> Void)
     func logout(token: String, result: @escaping (Error?) -> Void)
-    func signup(user: UserModel, result: @escaping (SessionModel?, Error?) -> Void)
+    func signup(user: UserDTO, result: @escaping (SessionDTO?, Error?) -> Void)
+    func delete(id: String, result: @escaping (Error?) -> Void)
 }

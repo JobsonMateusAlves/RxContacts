@@ -14,6 +14,6 @@ protocol AuthenticationLocalRepositoryProtocol {
     var user: Observable<UserModel?> { get }
     var isSessionActive: Observable<Bool> { get }
     
-    func create(session: SessionModel)
+    func create(session: SessionDTO)
     func logout()
 }

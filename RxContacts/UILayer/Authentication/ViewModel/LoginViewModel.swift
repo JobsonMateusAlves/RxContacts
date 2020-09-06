@@ -16,7 +16,7 @@ class LoginViewModel: LoginViewModelProtocol {
     
     var disposeBag: DisposeBag
     
-    private var isLoading = BehaviorRelay<Bool>(value: false)
+    private var isLoading = BehavoirRelay<Bool>(defaultValue: false)
     var _isLoading: Observable<Bool> {
         get {
             self.isLoading.asObservable()

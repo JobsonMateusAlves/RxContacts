@@ -48,14 +48,14 @@ class AuthenticationRepository: AuthenticationRepositoryProtocol {
     
     func signup(user: User) {
         
-        self.remoteRepository.signup(user: UserModel(user: user)) { (model, error) in
-            
-            print(error?.localizedDescription ?? "")
-            
-            if let model = model {
-                self.localRepository.create(session: model)
-            }
-        }
+//        self.remoteRepository.signup(user: UserModel(user: user)) { (model, error) in
+//            
+//            print(error?.localizedDescription ?? "")
+//            
+//            if let model = model {
+//                self.localRepository.create(session: model)
+//            }
+//        }
     }
     
     //MARK: Result methods

@@ -7,19 +7,25 @@ target 'RxContacts' do
 
   # Pods for RxContacts
 
-  pod 'Alamofire'
-  pod 'AlamofireObjectMapper'
-  pod 'ObjectMapper'
-  pod 'RealmSwift'
-  
-  pod 'RxSwift'
-  pod 'RxCocoa'
+  pod 'Alamofire',                   '~> 4.8.1'
+  pod 'EVReflection/Alamofire',      '~> 5.10.0'
+  pod 'EVReflection/Core',           '~> 5.10.0'
+  pod 'EVReflection/Moya',           '~> 5.10.0'
+  pod 'EVReflection/MoyaRxSwift',    '~> 5.10.0'
+  pod 'Moya',                        '~> 12.0.1'
+  pod 'Moya/Core',                   '~> 12.0.1'
+  pod 'Moya/RxSwift',                '~> 12.0.1'
+  pod 'Realm',                       '~> 3.20.0'
+  pod 'RealmSwift',                  '~> 3.20.0'
+  pod 'RxAtomic',                    '~> 4.4.2'
+  pod 'RxSwift',                     '~> 4.4.2'
+  pod 'Swinject',                    '~> 2.6.2'
   pod 'RxRelay'
-  pod 'RxRealm'
-  
   target 'RxContactsTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxTest'
+    pod 'RxBlocking'
   end
 
   target 'RxContactsUITests' do

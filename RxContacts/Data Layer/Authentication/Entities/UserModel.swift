@@ -8,9 +8,9 @@
 
 import Foundation
 import RealmSwift
-import ObjectMapper
+import EVReflection
 
-class UserModel: Object, Mappable {
+class UserModel: Object {
     
     @objc dynamic var id: String?
     @objc dynamic var name: String?
@@ -19,30 +19,7 @@ class UserModel: Object, Mappable {
     
     var password: String?
     
-    required init() {}
-    
-    init(user: User) {
-        self.id = user.id
-        self.name = user.name
-        self.photo = user.photo
-        self.email = user.email
-        self.password = user.password
-    }
-    
-    required convenience init?(map: Map) {
-        self.init()
-    }
-    
     override class func primaryKey() -> String? {
         return "id"
-    }
-    
-    func mapping(map: Map) {
-        
-        self.id         <- map["_id"]
-        self.name       <- map["name"]
-        self.photo      <- map["photo"]
-        self.email      <- map["email"]
-        self.password   <- map["password"]
     }
 }

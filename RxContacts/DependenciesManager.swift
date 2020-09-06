@@ -22,9 +22,9 @@ struct DependenciesManager {
     }()
     
     //MARK: Api
-    let authenticationApi: AuthenticationApi = {
-        return AuthenticationApi()
-    }()
+//    let authenticationApi: AuthenticationApi = {
+//        return AuthenticationApi()
+//    }()
     
 //    let authenticationApi: AuthenticationApi = {
 //        return AuthenticationApi()
