@@ -17,9 +17,15 @@ target 'RxContacts' do
   pod 'RxRelay'
   pod 'RxRealm'
   
+  pod 'Swinject'
+  
+  pod 'RxTest'
+  pod 'RxBlocking'
+  
   target 'RxContactsTests' do
     inherit! :search_paths
     # Pods for testing
+    
   end
 
   target 'RxContactsUITests' do

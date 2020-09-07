@@ -10,6 +10,10 @@
 		2C79CD34481450F538488CD6 /* Pods_RxContacts_RxContactsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B40AF866F4830CF75CB106 /* Pods_RxContacts_RxContactsUITests.framework */; };
 		7CB05C575FFD810FFB79FBCA /* Pods_RxContactsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB16F91431707E2491CB588 /* Pods_RxContactsTests.framework */; };
 		DC5CF0B5C82F27D961F666E4 /* Pods_RxContacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA56B5AEA289BF1E59EE741 /* Pods_RxContacts.framework */; };
+		F65F86C32505744200C287B5 /* AuthenticationLocalRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86C12505744200C287B5 /* AuthenticationLocalRepositoryTests.swift */; };
+		F65F86C42505744200C287B5 /* AuthenticationRemoteRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86C22505744200C287B5 /* AuthenticationRemoteRepositoryTests.swift */; };
+		F65F86C72505759B00C287B5 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86C62505759B00C287B5 /* UserDTO.swift */; };
+		F65F86C92505764C00C287B5 /* SessionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86C82505764C00C287B5 /* SessionDTO.swift */; };
 		F6D6893F24F6802800C4B81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6893E24F6802800C4B81A /* AppDelegate.swift */; };
 		F6D6894124F6802800C4B81A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6894024F6802800C4B81A /* SceneDelegate.swift */; };
 		F6D6894324F6802800C4B81A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6894224F6802800C4B81A /* ViewController.swift */; };
@@ -41,7 +45,6 @@
 		F6D689B424F6813E00C4B81A /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D6899E24F6813E00C4B81A /* SessionModel.swift */; };
 		F6F6729C24F6AA6100D7A37B /* ScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F6729B24F6AA6100D7A37B /* ScreenManager.swift */; };
 		F6F672A024F6ABAE00D7A37B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F6729F24F6ABAE00D7A37B /* ContactsViewController.swift */; };
-		F6F672A224F6C3D400D7A37B /* DependenciesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F672A124F6C3D400D7A37B /* DependenciesManager.swift */; };
 		F6F672A824F6CAA700D7A37B /* AuthenticationLocalRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F672A724F6CAA700D7A37B /* AuthenticationLocalRepositoryType.swift */; };
 		F6F672AB24F6CB4400D7A37B /* AuthenticationApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F672AA24F6CB4400D7A37B /* AuthenticationApiProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,10 @@
 		7FCC5178BF0FADE8E6B128AD /* Pods-RxContactsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxContactsTests.release.xcconfig"; path = "Target Support Files/Pods-RxContactsTests/Pods-RxContactsTests.release.xcconfig"; sourceTree = "<group>"; };
 		A10CCF829A9D51C7E972F9AC /* Pods-RxContacts-RxContactsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxContacts-RxContactsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxContacts-RxContactsUITests/Pods-RxContacts-RxContactsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B20409FD5CD713ABE99074D2 /* Pods-RxContacts-RxContactsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxContacts-RxContactsUITests.release.xcconfig"; path = "Target Support Files/Pods-RxContacts-RxContactsUITests/Pods-RxContacts-RxContactsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F65F86C12505744200C287B5 /* AuthenticationLocalRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationLocalRepositoryTests.swift; sourceTree = "<group>"; };
+		F65F86C22505744200C287B5 /* AuthenticationRemoteRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRemoteRepositoryTests.swift; sourceTree = "<group>"; };
+		F65F86C62505759B00C287B5 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		F65F86C82505764C00C287B5 /* SessionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDTO.swift; sourceTree = "<group>"; };
 		F6D6893B24F6802800C4B81A /* RxContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D6893E24F6802800C4B81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D6894024F6802800C4B81A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,7 +116,6 @@
 		F6D6899E24F6813E00C4B81A /* SessionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 		F6F6729B24F6AA6100D7A37B /* ScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenManager.swift; sourceTree = "<group>"; };
 		F6F6729F24F6ABAE00D7A37B /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
-		F6F672A124F6C3D400D7A37B /* DependenciesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesManager.swift; sourceTree = "<group>"; };
 		F6F672A724F6CAA700D7A37B /* AuthenticationLocalRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLocalRepositoryType.swift; sourceTree = "<group>"; };
 		F6F672AA24F6CB4400D7A37B /* AuthenticationApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationApiProtocol.swift; sourceTree = "<group>"; };
 		FBB16F91431707E2491CB588 /* Pods_RxContactsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxContactsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +172,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F65F86BF2505744200C287B5 /* Data Layer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F65F86C02505744200C287B5 /* Authentication */,
+			);
+			path = "Data Layer Tests";
+			sourceTree = "<group>";
+		};
+		F65F86C02505744200C287B5 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F65F86C12505744200C287B5 /* AuthenticationLocalRepositoryTests.swift */,
+				F65F86C22505744200C287B5 /* AuthenticationRemoteRepositoryTests.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F65F86C52505758C00C287B5 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F65F86C62505759B00C287B5 /* UserDTO.swift */,
+				F65F86C82505764C00C287B5 /* SessionDTO.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		F6D6893224F6802800C4B81A = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +235,6 @@
 				F6D6894C24F6802E00C4B81A /* Info.plist */,
 				F6F6729B24F6AA6100D7A37B /* ScreenManager.swift */,
 				F6F6729F24F6ABAE00D7A37B /* ContactsViewController.swift */,
-				F6F672A124F6C3D400D7A37B /* DependenciesManager.swift */,
 			);
 			path = RxContacts;
 			sourceTree = "<group>";
@@ -211,6 +242,7 @@
 		F6D6895424F6802E00C4B81A /* RxContactsTests */ = {
 			isa = PBXGroup;
 			children = (
+				F65F86BF2505744200C287B5 /* Data Layer Tests */,
 				F6D6895524F6802E00C4B81A /* RxContactsTests.swift */,
 				F6D6895724F6802E00C4B81A /* Info.plist */,
 			);
@@ -348,7 +380,6 @@
 			isa = PBXGroup;
 			children = (
 				F6D6898324F6813E00C4B81A /* Generic */,
-				F6D6898524F6813E00C4B81A /* Protocols */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -359,13 +390,6 @@
 				F6D6898424F6813E00C4B81A /* LocalRepository.swift */,
 			);
 			path = Generic;
-			sourceTree = "<group>";
-		};
-		F6D6898524F6813E00C4B81A /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		F6D6898624F6813E00C4B81A /* Contacts */ = {
@@ -456,6 +480,7 @@
 		F6D6899C24F6813E00C4B81A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				F65F86C52505758C00C287B5 /* Request */,
 				F6D6899D24F6813E00C4B81A /* UserModel.swift */,
 				F6D6899E24F6813E00C4B81A /* SessionModel.swift */,
 			);
@@ -721,12 +746,13 @@
 				F6D6899F24F6813E00C4B81A /* UseCase.swift in Sources */,
 				F6D689AB24F6813E00C4B81A /* AuthenticationRemoteRepositoryProtocol.swift in Sources */,
 				F6D689B324F6813E00C4B81A /* UserModel.swift in Sources */,
+				F65F86C92505764C00C287B5 /* SessionDTO.swift in Sources */,
 				F6D689AC24F6813E00C4B81A /* AuthenticationLocalRepositoryProtocol.swift in Sources */,
 				F6D689AE24F6813E00C4B81A /* AuthenticationApi.swift in Sources */,
 				F6D689A524F6813E00C4B81A /* LocalRepository.swift in Sources */,
-				F6F672A224F6C3D400D7A37B /* DependenciesManager.swift in Sources */,
 				F6D689B024F6813E00C4B81A /* LoginUseCase.swift in Sources */,
 				F6F6729C24F6AA6100D7A37B /* ScreenManager.swift in Sources */,
+				F65F86C72505759B00C287B5 /* UserDTO.swift in Sources */,
 				F6D689A124F6813E00C4B81A /* User.swift in Sources */,
 				F6D689A824F6813E00C4B81A /* AuthenticationRepository.swift in Sources */,
 				F6D689A924F6813E00C4B81A /* AuthenticationLocalRepository.swift in Sources */,
@@ -746,6 +772,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D6895624F6802E00C4B81A /* RxContactsTests.swift in Sources */,
+				F65F86C42505744200C287B5 /* AuthenticationRemoteRepositoryTests.swift in Sources */,
+				F65F86C32505744200C287B5 /* AuthenticationLocalRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,10 +21,9 @@ class AuthenticationRemoteRepository: AuthenticationRemoteRepositoryProtocol {
     }
     
     //MARK: Methods
-    func login(email: String, password: String, result: @escaping (SessionModel?, Error?) -> Void) {
+    func login(email: String, password: String, result: @escaping (SessionDTO?, Error?) -> Void) {
         
-        
-        self.api.login(email: email, password: password).validate().responseObject { (response: DataResponse<SessionModel, AFError>) in
+        self.api.login(email: email, password: password).validate().responseObject { (response: DataResponse<SessionDTO, AFError>) in
             
             result(response.value, response.error)
         }
@@ -37,9 +36,9 @@ class AuthenticationRemoteRepository: AuthenticationRemoteRepositoryProtocol {
         }
     }
     
-    func signup(user: UserModel, result: @escaping (SessionModel?, Error?) -> Void) {
+    func signup(user: UserDTO, result: @escaping (SessionDTO?, Error?) -> Void) {
         
-        self.api.signup(user: user).validate().responseObject { (response: DataResponse<SessionModel, AFError>) in
+        self.api.signup(user: user).validate().responseObject { (response: DataResponse<SessionDTO, AFError>) in
             
             result(response.value, response.error)
         }

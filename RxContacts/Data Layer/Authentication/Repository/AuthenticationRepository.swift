@@ -46,9 +46,9 @@ class AuthenticationRepository: AuthenticationRepositoryProtocol {
         }
     }
     
-    func signup(user: User) {
+    func signup(user: UserDTO) {
         
-        self.remoteRepository.signup(user: UserModel(user: user)) { (model, error) in
+        self.remoteRepository.signup(user: user) { (model, error) in
             
             print(error?.localizedDescription ?? "")
             

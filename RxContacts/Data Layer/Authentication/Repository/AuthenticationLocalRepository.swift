@@ -45,11 +45,11 @@ class AuthenticationLocalRepository: AuthenticationLocalRepositoryType {
     }
     
     //MARK: Action methods
-    func create(session: SessionModel) {
+    func create(session: SessionDTO) {
         
         if let user = session.user {
             self.delete()
-            self.save(object: user, update: .error)
+            self.save(object: UserModel(user: user), update: .error)
         }
         
         if let token = session.token {

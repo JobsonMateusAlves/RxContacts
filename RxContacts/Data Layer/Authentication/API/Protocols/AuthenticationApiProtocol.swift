@@ -13,5 +13,5 @@ protocol AuthenticationApiProtocol {
     
     func login(email: String, password: String) -> DataRequest
     func logout(token: String) -> DataRequest
-    func signup(user: UserModel) -> DataRequest
+    func signup(user: UserDTO) -> DataRequest
 }

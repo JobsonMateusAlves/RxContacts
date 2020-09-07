@@ -7,20 +7,20 @@
 //
 
 import Foundation
-import ObjectMapper
-
-class SessionModel: Mappable {
-    
-    var user: UserModel?
-    var token: String?
-    
-    required convenience init?(map: Map) {
-        self.init()
-    }
-    
-    func mapping(map: Map) {
-        
-        self.user       <- map["user"]
-        self.token      <- map["token"]
-    }
-}
+//import ObjectMapper
+//
+//class SessionModel {
+//    
+//    var user: UserModel?
+//    var token: String?
+//    
+//    required convenience init?(map: Map) {
+//        self.init()
+//    }
+//    
+//    func mapping(map: Map) {
+//        
+//        self.user       <- map["user"]
+//        self.token      <- map["token"]
+//    }
+//}

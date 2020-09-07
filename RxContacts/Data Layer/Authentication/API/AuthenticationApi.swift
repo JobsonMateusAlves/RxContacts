@@ -27,11 +27,12 @@ class AuthenticationApi: AuthenticationApiProtocol {
         return AF.request("\(baseUrl)/logout", method: .delete, headers: ["token": token])
     }
     
-    func signup(user: UserModel) -> DataRequest {
+    func signup(user: UserDTO) -> DataRequest {
         
         return AF.request("\(baseUrl)/signup",
-                          method: .delete,
+                          method: .post,
                           parameters: user.toJSON(),
                           encoding: JSONEncoding.default)
     }
+    
 }

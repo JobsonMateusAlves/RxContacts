@@ -12,7 +12,7 @@ protocol AuthenticationRepositoryProtocol {
     //MARK: Action methods
     func login(email: String, password: String)
     func logout()
-    func signup(user: User)
+    func signup(user: UserDTO)
     
     //MARK: Result methods
     func getUser() -> Observable<User>

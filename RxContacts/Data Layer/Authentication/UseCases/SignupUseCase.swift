@@ -22,7 +22,7 @@ class SignupUseCase: UseCase {
     }
     
     func execute(params: User) {
-        self.repository.signup(user: params)
+//        self.repository.signup(user: params)
     }
     
     func result() -> Observable<Bool> {
